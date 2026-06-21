@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAB 712 - Nowoczesne Strony Internetowe</title>
+    <meta name="description"
+        content="Projektujemy i budujemy strony internetowe, które przyciągają klientów. Pomagamy firmom wyglądać w internecie tak dobrze, jak na to zasługują.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo-link">
+                <img src="logo.png" alt="LAB 712 Logo" class="logo">
+                <span class="logo-text">LAB 712</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#start" class="active">START</a></li>
+                <li><a href="#o-nas">O NAS</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#kontakt">KONTAKT</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="start" class="hero">
+            <div class="container hero-container">
+                <div class="hero-left">
+                    <img src="LAB712_Logo_Wektor_1.png" alt="LAB 712" class="hero-logo-glow">
+                </div>
+                <div class="hero-right">
+                    <div class="glass-card">
+                        <h2>Witaj w LAB712</h2>
+                        <p>Projektujemy i budujemy strony internetowe, które przyciągają klientów. Pomagamy firmom
+                            wyglądać w internecie tak dobrze, jak na to zasługują.</p>
+                        <div class="card-buttons">
+                            <a href="#kontakt" class="btn btn-primary">Skontaktuj się</a>
+                            <a href="#portfolio" class="btn btn-secondary">Zobacz projekty</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="o-nas" class="about section-padding">
+            <div class="container">
+                <h2 class="section-title">O Nas</h2>
+                <div class="about-content">
+                    <p>Jesteśmy zespołem pasjonatów, dla których tworzenie stron internetowych to coś więcej niż praca –
+                        to sztuka. Zmieniamy przestarzałe witryny w nowoczesne, funkcjonalne i szybkie aplikacje webowe.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio section-padding">
+            <div class="container">
+                <h2 class="section-title">Nasze Projekty</h2>
+                <div class="portfolio-grid">
+                    <!-- Portfolio Item 1 -->
+                    <a href="https://powerpadelcamps.pl/" target="_blank" class="portfolio-item">
+                        <div class="portfolio-img" style="background-image: url('powerpadelcamps.png');"></div>
+                        <div class="portfolio-info">
+                            <h3>Power Padel Camps</h3>
+                            <p>Nowoczesna strona internetowa obozów sportowych.</p>
+                        </div>
+                    </a>
+                    <!-- Portfolio Item 2 -->
+                    <div class="portfolio-item">
+                        <div class="portfolio-img" style="background-image: url('portfolio2.png');"></div>
+                        <div class="portfolio-info">
+                            <h3>Padel Spot</h3>
+                            <p>Wizytówka online klub sportowego</p>
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 3 -->
+                    <div class="portfolio-item">
+                        <div class="portfolio-img" style="background-image: url('portfolio3.png');"></div>
+                        <div class="portfolio-info">
+                            <h3>Aplikacja Webowa</h3>
+                            <p>System zarządzania dla kliniki medycznej.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="kontakt" class="contact section-padding">
+            <div class="container">
+                <h2 class="section-title">Kontakt</h2>
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h3>Zacznijmy współpracę</h3>
+                        <p>Gotowy na nową stronę? Skontaktuj się z nami!</p>
+
+                        <div class="contact-methods">
+                            <a href="tel:+48793365470" class="contact-method">
+                                <div class="icon-box"><i class="fas fa-phone"></i></div>
+                                <div>
+                                    <h4>Zadzwoń do nas</h4>
+                                    <span>+48 793 365 470</span>
+                                </div>
+                            </a>
+                            <a href="sms:+48793365470" class="contact-method">
+                                <div class="icon-box"><i class="fas fa-sms"></i></div>
+                                <div>
+                                    <h4>Napisz SMS</h4>
+                                    <span>+48 793 365 470</span>
+                                </div>
+                            </a>
+                            <a href="mailto:stronadlaciebie.wm@gmail.com" class="contact-method">
+                                <div class="icon-box"><i class="fas fa-envelope"></i></div>
+                                <div>
+                                    <h4>Napisz E-mail</h4>
+                                    <span>stronadlaciebie.wm@gmail.com</span>
+                                </div>
+                            </a>
+                            <a href="https://www.instagram.com/lab_712__/" target="_blank" class="contact-method">
+                                <div class="icon-box"><i class="fab fa-instagram"></i></div>
+                                <div>
+                                    <h4>Instagram</h4>
+                                    <span>@lab_712__</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="92058e85-4135-4be6-8097-8f191a583779">
+                        <input type="hidden" name="subject" value="Nowa wiadomość ze strony LAB 712">
+                        <input type="text" name="name" placeholder="Twoje Imię" required>
+                        <input type="email" name="email" placeholder="Twój E-mail" required>
+                        <textarea name="message" placeholder="Wiadomość" rows="5" required></textarea>
+                        <button type="submit" class="btn btn-primary w-100">Wyślij wiadomość</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 LAB 712. Wszelkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
