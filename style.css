@@ -178,21 +178,27 @@ ul {
     width: 700px;
     margin-bottom: 40px;
     filter: brightness(0) invert(1) drop-shadow(0 0 30px rgba(255, 255, 255, 0.6)) drop-shadow(0 0 60px rgba(255, 255, 255, 0.3));
-    animation: floatAndGlow 4s ease-in-out infinite alternate;
+    animation: floatAndGlow 5s ease-in-out infinite alternate;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), filter 0.4s ease;
+}
+
+.hero-logo-glow:hover {
+    transform: scale(1.08) rotate(2deg);
+    filter: brightness(0) invert(1) drop-shadow(0 0 50px rgba(255, 255, 255, 0.9)) drop-shadow(0 0 100px rgba(255, 255, 255, 0.7)) drop-shadow(0 0 150px rgba(255, 255, 255, 0.4));
 }
 
 @keyframes floatAndGlow {
     0% {
-        filter: brightness(0) invert(1) drop-shadow(0 0 20px rgba(255, 255, 255, 0.3)) drop-shadow(0 0 40px rgba(255, 255, 255, 0.1));
+        filter: brightness(0) invert(1) drop-shadow(0 0 20px rgba(255, 255, 255, 0.4)) drop-shadow(0 0 40px rgba(255, 255, 255, 0.2));
         transform: translateY(0px) scale(1);
     }
     50% {
-        filter: brightness(0) invert(1) drop-shadow(0 0 40px rgba(255, 255, 255, 0.8)) drop-shadow(0 0 80px rgba(255, 255, 255, 0.5));
-        transform: translateY(-20px) scale(1.05);
+        filter: brightness(0) invert(1) drop-shadow(0 0 45px rgba(255, 255, 255, 0.9)) drop-shadow(0 0 90px rgba(255, 255, 255, 0.6)) drop-shadow(0 0 130px rgba(255, 255, 255, 0.3));
+        transform: translateY(-20px) scale(1.03) rotate(1deg);
     }
     100% {
-        filter: brightness(0) invert(1) drop-shadow(0 0 25px rgba(255, 255, 255, 0.4)) drop-shadow(0 0 50px rgba(255, 255, 255, 0.2));
-        transform: translateY(-5px) scale(1.02);
+        filter: brightness(0) invert(1) drop-shadow(0 0 25px rgba(255, 255, 255, 0.5)) drop-shadow(0 0 50px rgba(255, 255, 255, 0.3));
+        transform: translateY(-5px) scale(1.01) rotate(-1deg);
     }
 }
 
@@ -483,10 +489,42 @@ footer {
     }
 
     .hero-logo-glow {
-        width: 300px;
+        width: 320px;
+        margin-top: 50px;
+        margin-bottom: 30px;
     }
 
     .card-buttons {
         flex-direction: column;
+    }
+
+    .contact-wrapper {
+        padding: 25px;
+        gap: 40px;
+    }
+
+    .contact-info {
+        text-align: center;
+    }
+
+    .contact-methods {
+        align-items: center;
+    }
+
+    .contact-method {
+        width: 100%;
+        max-width: 350px;
+        text-align: left;
+    }
+
+    .contact-form {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        text-align: center;
     }
 }
