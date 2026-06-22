@@ -489,7 +489,8 @@ footer {
     }
 
     .hero-logo-glow {
-        width: 320px;
+        width: 100%;
+        max-width: 320px;
         margin-top: 50px;
         margin-bottom: 30px;
     }
@@ -519,12 +520,10 @@ footer {
 
     .contact-form {
         width: 100%;
-        max-width: 400px;
-        margin: 0 auto;
     }
 
     .contact-form input,
     .contact-form textarea {
-        text-align: center;
+        text-align: left;
     }
 }
