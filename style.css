@@ -401,6 +401,9 @@ ul {
 .contact-method span {
     color: var(--text-secondary);
     font-size: 0.9rem;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    display: block;
 }
 
 .contact-form {
@@ -509,12 +512,12 @@ footer {
     }
 
     .contact-methods {
-        align-items: center;
+        align-items: stretch;
     }
 
     .contact-method {
         width: 100%;
-        max-width: 350px;
+        max-width: 100%;
         text-align: left;
     }
 
